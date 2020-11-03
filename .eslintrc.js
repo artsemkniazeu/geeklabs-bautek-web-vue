@@ -3,10 +3,10 @@ module.exports = {
   env: {
     node: true,
   },
-  parser: "vue-eslint-parser",
-  plugins: ["vue"],
+  parser: 'vue-eslint-parser',
+  plugins: ['vue'],
   extends: [
-    "eslint:recommended",
+    'eslint:recommended',
     'plugin:vue/essential',
     '@vue/airbnb',
   ],

@@ -6,6 +6,7 @@ export default {
     this.$parent.$emit('update:layout', Default);
   },
   render() {
-    return this.$slots.default[0];
+    if (this.$slots.default) return this.$slots.default[0];
+    return '';
   },
 };

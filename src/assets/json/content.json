@@ -1,0 +1,56 @@
+{
+  "navbar": {
+    "brand": "Bautek.by"
+  },
+  "footer": {
+    "contacts": {
+      "title": "",
+      "data": [
+
+        {
+          "title": "Адрес:",
+          "data": [
+            {
+              "iconClass": "flaticon-gps",
+              "name": "Минск, Старовиленская 100к10",
+              "url": "https://maps.google.com/maps?q=/Ulitsa+Starovilenskaya+100,+Minsk,+Belarus"
+            }
+          ]
+        },
+        
+        {
+          "title": "Телефон:",
+          "data": [
+            {
+              "iconClass": "flaticon-phone-call",
+              "name": "+375336618081 (Viber, Telegram)",
+              "url": "tel:+375336618081"
+            },
+            {
+              "iconClass": "flaticon-phone-call",
+              "name": "+375447089090",
+              "url": "tel:+375447089090"
+            }
+          ]
+        },
+
+        {
+          "title": "E-mail:",
+          "data": [
+            {
+              "iconClass": "flaticon-email",
+              "name": "+375336618081 (Viber, Telegram)",
+              "url": "tel:+375336618081"
+            }
+          ]
+        }
+
+      ]
+    },
+
+    "map": {
+      "url": "https://maps.google.com/maps?q=/Ulitsa+Starovilenskaya+100,+Minsk,+Belarus&t=&z=17&ie=UTF8&iwloc=&output=embed"
+    }
+    
+  }
+}

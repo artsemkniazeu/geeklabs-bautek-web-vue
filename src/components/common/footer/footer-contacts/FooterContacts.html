@@ -1,0 +1,14 @@
+<div class="contacts col-md-6 col-sm-12 mx-auto pb-sm-5" id="contacts">
+  <h2 class="font-weight-bold text-uppercase mt-3 mb-5">{{contacts.title}}</h2>
+  <div v-for="group in contacts.data" class="group">
+    <p class="h5"><b>{{group.title}}</b></p>
+    <ul class="list-unstyled h6 font-weight-normal text-white" >
+      <li class="contact text-left pb-1" v-for="contact in group.data">
+        <i class="icon float-left pr-2" :class="contact.iconClass"></i>
+        <a :href="contact.url" class="clearfix secondary-hover">
+          {{contact.name}}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

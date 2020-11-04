@@ -1,12 +1,11 @@
 {
   "navbar": {
-    "brand": "Bautek.by"
+    "brand": "<h5>Bautek.by</h5>"
   },
   "footer": {
     "contacts": {
-      "title": "",
+      "title": "КОНТАКТЫ",
       "data": [
-
         {
           "title": "Адрес:",
           "data": [
@@ -17,7 +16,6 @@
             }
           ]
         },
-        
         {
           "title": "Телефон:",
           "data": [
@@ -33,21 +31,18 @@
             }
           ]
         },
-
         {
           "title": "E-mail:",
           "data": [
             {
               "iconClass": "flaticon-email",
-              "name": "+375336618081 (Viber, Telegram)",
-              "url": "tel:+375336618081"
+              "name": "advertisby@gmail.com",
+              "url": "mailto:advertisby@gmail.com"
             }
           ]
         }
-
       ]
     },
-
     "map": {
       "url": "https://maps.google.com/maps?q=/Ulitsa+Starovilenskaya+100,+Minsk,+Belarus&t=&z=17&ie=UTF8&iwloc=&output=embed"
     }

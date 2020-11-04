@@ -1,3 +1,11 @@
-<div>
-  <slot/>
+<div class="default-layout d-flex flex-column h-100">
+  <div class="default-layout-header">
+    <Navbar/>
+  </div>
+  <div class="default-layout-main">
+    <slot/>
+  </div>
+  <div class="default-layout-footer">
+    <Footer/>
+  </div>
 </div>

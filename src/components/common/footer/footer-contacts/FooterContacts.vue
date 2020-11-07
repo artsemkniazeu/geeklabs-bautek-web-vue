@@ -2,6 +2,7 @@
 <style scoped lang="sass" src="./FooterContacts.sass"></style>
 <script>
 import contactsSchema from '@/schemas/footer/contacts';
+import validators from '@/schemas/validators';
 
 export default {
   name: 'FooterContacts',
@@ -9,13 +10,7 @@ export default {
     contacts: {
       type: Object,
       validator(value) {
-        const errors = contactsSchema.validate(value);
-        const valid = errors.length === 0;
-        console.log(value);
-        if (!valid) {
-          console.error('FooterContacts prop contacts', errors);
-        }
-        return valid;
+        return validators.schemaValidator(contactsSchema, value, 'FooterContacts.vue prop contacts invalid');
       },
     },
   },

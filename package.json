@@ -9,11 +9,14 @@
     "start": "vue-cli-service serve --open"
   },
   "dependencies": {
+    "@splidejs/vue-splide": "^0.3.5",
     "bootstrap-css-only": "^4.4.1",
     "core-js": "^3.6.5",
     "mdbvue": "6.7.1",
+    "prerender-spa-plugin": "^3.4.0",
     "validate": "^5.1.0",
     "vue": "^2.6.11",
+    "vue-photoswipe": "^1.0.3",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
   },
@@ -30,6 +33,7 @@
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "^6.2.2",
+    "path": "^0.12.7",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "vue-cli-plugin-mdb": "~2.1.0",

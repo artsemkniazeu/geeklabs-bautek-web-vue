@@ -1,0 +1,13 @@
+<section class="intro z-depth-2">
+  <splide :options="options" >
+    <splide-slide v-for="slide in slides" :key="slide.src">
+      <img :src="image(slide.src)">
+      <div class="caption row d-flex justify-content-around align-items-center m-2 p-5">
+        <div class="col-lg-8 col-md-10 col-sm-12 text-white">
+          <h1 class="h1-responsive mb-4 display-lg-4" v-html="slide.caption.display"></h1>
+          <h5 class="mt-2 mb-3" v-html="slide.caption.text"></h5>
+        </div>
+      </div>
+    </splide-slide>
+  </splide>
+</section>

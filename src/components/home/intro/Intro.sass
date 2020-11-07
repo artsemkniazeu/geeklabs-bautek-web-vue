@@ -1,0 +1,44 @@
+@import '~@splidejs/splide/dist/css/themes/splide-skyblue.min.css'
+@import '@/assets/sass/_variables.sass'
+
+.intro
+  height: 70vh
+  min-height: 500px
+  &::v-deep .splide
+    height: 100%
+    .splide__track
+      height: 100%
+      .splide__list
+        height: 100%
+        .splide__slide
+          height: 100%
+          img
+            height: 100%
+    
+    .splide__arrow svg
+      fill: rgb(white, 0.5)
+      &:hover
+        fill: rgb(white, 0.9)
+    .splide__pagination__page
+      background: rgb(white, 0.5)
+      &.is-active
+        background: rgb(white, 0.9)
+        transform: scale(1.25)
+    .splide__slide
+      .caption
+        height: 100%
+        &::before
+          content: ''
+          position: absolute
+          height: 100%
+          width: 100%
+          top: 0
+          left: 0
+          background: linear-gradient(90deg, rgba($primary-color, 80%) 0%, rgba($primary-color, .30) 100%)
+
+
+
+  
+@media (max-width: 1200px)
+  .intro
+    height: calc(100vh - 90px)

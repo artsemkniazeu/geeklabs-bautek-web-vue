@@ -1,0 +1,27 @@
+<section class="products py-5 px-2" id="products">
+
+  <div class="container-fluid">
+    <div class="col-md-12 pb-2">
+      <h2 class="text-center" v-html="title"></h2>
+    </div>
+  </div>
+  <div class="container-fluid mt-2">
+    <div class="row">
+      <!-- 25 -->
+      <div class="col-lg-3 col-sm-6 col-xs-12 p-2" v-for="item in items">
+        <div class="card p-2">
+          <div class="view overlay">
+            <img class="card-img-top" :src="image(item.src)" alt="Card image cap">
+            <router-link :to="getUrl(item.tag)">
+              <div class="mask rgba-white-slight"></div>
+            </router-link>
+          </div>
+          <div class="card-body py-3 px-2">
+            <h4 class="card-title text-center">{{item.title}}</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

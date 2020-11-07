@@ -10,7 +10,19 @@ export default {
   data() {
     return {
       brand: navbar.brand,
+      fullPath: '',
+      hash: '',
     };
+  },
+  mounted() {
+    this.fullPath = this.$route.fullPath;
+    this.hash = this.$route.hash;
+  },
+  watch: {
+    $route(to) {
+      this.fullPath = to.fullPath;
+      this.hash = this.$route.hash;
+    },
   },
 };
 </script>

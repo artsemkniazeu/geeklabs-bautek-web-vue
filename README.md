@@ -1,4 +1,6 @@
-# geeklabs-bautek-web-vue
+# Bautek.by
+
+## geeklabs-bautek-web-vue
 
 ## Project setup
 ```

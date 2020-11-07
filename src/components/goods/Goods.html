@@ -1,0 +1,48 @@
+<section class="goods py-5 px-2">
+  <div class="container">
+    <div class="row chips mb-3">
+      <div class="col-md-12" >
+        <button type="button" class="btn btn-primary btn-rounded" :class="{active: selectedChip === null}" @click="selectChip()">Все</button>
+        <button type="button" class="btn btn-info btn-rounded" v-for="chip in chips" @click="selectChip(chip)" :class="{active: selectedChip && selectedChip.id === chip.id}">{{chip.name}}</button>
+      </div>
+    </div>
+    <div class="row" >
+      <div class="col-md-12 mt-3" v-for="item in itemsFiltered">
+        <div class="good card row flex-row py-5" >
+          <div class="good-img col-md-4">
+            <img :src="item.url" alt="">
+          </div>
+          <div class="good-description col-md-7">
+            <h2 v-html="item.name"></h2>
+            <h5 v-html="item.description"></h5>
+            <hr v-if="item.specification.length > 0">
+            <div class="specification">
+              <div class="spec mt-2" v-for="spec in item.specification">
+                <h5 v-html="spec.title" class="font-weight-normal"></h5>
+                <table>
+                  <tbody>
+                    <tr v-for="param in spec.parameters">
+                      <td class="h6 font-weight-light">{{param.name}}:</td>
+                      <td>{{param.value}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <hr v-if="item.price.prices.length > 0">
+            <div class="prices d-flex flex-row" v-if="item.price.prices.length > 0">
+              <h4 v-html="item.price.title" class="mr-3"></h4>
+              <table>
+                <tbody>
+                  <tr v-for="price in item.price.prices">
+                    <td class="h5 font-weight-light">{{price.value}} {{price.unit}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
